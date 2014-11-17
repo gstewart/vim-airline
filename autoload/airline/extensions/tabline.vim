@@ -349,6 +349,7 @@ function! s:get_tabs()
   call b.add_raw('%T')
   call b.add_section('airline_tabfill', '')
   call b.split()
+  call b.add_section('airline_tabfill', '')
   if s:show_close_button
     call b.add_section('airline_tab', ' %999X'.s:close_symbol.' ')
   endif
